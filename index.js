@@ -17,8 +17,6 @@ wss.on('connection', (ws) => {
     broadcast(message, ws);
   });
 
-
-  
   ws.on('close', () => {
     clients.delete(ws);
     console.log('Client disconnected');
