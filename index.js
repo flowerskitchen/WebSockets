@@ -8,6 +8,9 @@ let clients = new Set();
 
 console.log('WebSocket Chat Server is running...');
 
+
+
+
 wss.on('connection', (ws) => {
   clients.add(ws);
   console.log('New client connected!');
