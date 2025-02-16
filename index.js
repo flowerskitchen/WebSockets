@@ -1,6 +1,6 @@
 const WebSocket = require('ws');
 const http = require('http');
-const app
+
 const server = http.createServer();
 const wss = new WebSocket.Server({ server });
 
